@@ -1,0 +1,84 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=1:mpiprocs=0:nmics=0:mem=100Gb
+#PBS -l walltime=12:00:0
+#PBS -l cput=10:0:0   
+#PBS -j oe
+#PBS -m ae
+#PBS -M ryoung@unlv.edu
+#PBS -V
+#PBS -N testing-bam-100g-stage3
+
+# uses /dev/shm for TMP_DIR (good for < 64Gb of temp space)
+
+declare -a fileName=( 
+
+'HG02588.mapped.ILLUMINA.bwa.GWD.exome.20130415.bam'
+
+
+ );
+
+for FILEVAR in ${fileName[@]}
+
+do
+    # get name of the file being read
+    prefix=${FILEVAR:0:7}
+
+nipm=/storage/nipm
+tmpdir=/dev/shm/ric
+input=${nipm}/1KG-RIC/RAW/
+
+echo "-----------------------------------------------------"
+echo "working on $FILEVAR "
+echo "prefix = $prefix"
+echo "filevar = ${nipm}/1KG-RIC/RAW/$FILEVAR"
+echo "Tempdir = ${tmpdir}"
+echo "All the Raw Bam files are here: ${nipm}/1KG-RIC/RAW/ "
+echo "Today is $(date)"
+echo "-----------------------------------------------------"
+
+
+sortedOutput=${nipm}/ric/bam-vcf-pipeline/done/sorted-$prefix.bam
+markedOutput=${nipm}/ric/bam-vcf-pipeline/done/marked-$prefix.bam
+groupedOutput=${nipm}/ric/bam-vcf-pipeline/done/group-$prefix.bam
+
+export JAVA_HOME=/home/ric/jdk1.8.0_72
+export PATH=${JAVA_HOME}/bin:${PATH}
+
+echo "Sorting"
+
+if [ -f ${sortedOutput} ] ; then
+  echo Aborting sorted output already exists 
+  echo ${sortedOutput}
+  exit -1
+fi
+
+java -Xmx4g  -jar /storage/nipm/APPS/picard/dist/picard.jar SortSam \
+       TMP_DIR=${tmpdir} \
+       INPUT=${input}  \
+       OUTPUT=${sortedOutput} \
+       SORT_ORDER=coordinate \
+       VALIDATION_STRINGENCY=LENIENT
+
+echo "Marking duplicates"
+java -Xmx4g -jar /storage/nipm/APPS/picard/dist/picard.jar MarkDuplicates \
+	TMP_DIR=${tmpdir} \
+	INPUT=${sortedOutput}  \
+	OUTPUT=${markedOutput} \
+	METRICS_FILE=metrics.txt VALIDATION_STRINGENCY=LENIENT
+
+
+echo "Add Or Replace Groups"
+java -Xmx4g -jar /storage/nipm/APPS/picard/dist/picard.jar  AddOrReplaceReadGroups \
+  TMP_DIR=${tmpdir} \
+  INPUT=${markedOutput}  \
+  OUTPUT=${groupedOutput} \
+  RGID=group1 \
+  RGLB=lib1 \
+  RGPL=illumina \
+  RGPU=unit1 \
+  RGSM=$prefix \
+  VALIDATION_STRINGENCY=LENIENT
+
+rm -rf ${tmpdir}
+done
+echo "done"

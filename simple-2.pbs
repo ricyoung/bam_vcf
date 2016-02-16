@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#PBS -l select=8:ncpus=8:mpiprocs=8:nmics=0:mem=5Gb
+#PBS -l walltime=12:00:0
+#PBS -l cput=10:0:0   
+#PBS -j oe
+#PBS -m bea
+#PBS -N simple-2
+#PBS -M ryoung@unlv.edu
+
+
+echo "Sorting"
+java -Xmx4g -jar /storage/nipm/APPS/picard/dist/picard.jar SortSam \
+	INPUT=/storage/nipm/1KG-RIC/RAW/HG01971.mapped.ILLUMINA.bwa.PEL.exome.20120522.bam  \
+	OUTPUT=/storage/nipm/ric/temp/sorted_HG0001971-testing3.bam SORT_ORDER=coordinate VALIDATION_STRINGENCY=LENIENT
+
+
+echo "done"

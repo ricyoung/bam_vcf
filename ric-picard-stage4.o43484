@@ -1,0 +1,587 @@
+-----------------------------------------------------
+working on HG01617.mapped.ILLUMINA.bwa.IBS.exome.20130415.bam 
+prefix = HG01617
+filevar = /storage/nipm/1KG-RIC/RAW/HG01617.mapped.ILLUMINA.bwa.IBS.exome.20130415.bam
+Tempdir = /dev/shm/ric
+All the Raw Bam files are here: /storage/nipm/1KG-RIC/RAW/ 
+Today is Mon Feb 15 20:49:42 PST 2016
+-----------------------------------------------------
+-----------------------------------------------------
+first file = /storage/nipm/1KG-RIC/RAW/HG01617.mapped.ILLUMINA.bwa.IBS.exome.20130415.bam 
+sorted output = /storage/nipm/ric/bam-vcf-pipeline/done/sorted-HG01617.bam
+marked output = /storage/nipm/ric/bam-vcf-pipeline/done/marked-HG01617.bam
+grouped output = /storage/nipm/ric/bam-vcf-pipeline/done/group-HG01617.bam
+index output = /storage/nipm/ric/bam-vcf-pipeline/done/indexed-HG01617.bai
+vcf=/storage/nipm/ric/bam-vcf-pipeline/done/HG01617.vcf
+-----------------------------------------------------
+-----------------------------------------------------
+Sorting
+-----------------------------------------------------
+[Mon Feb 15 20:49:44 PST 2016] picard.sam.SortSam INPUT=/storage/nipm/1KG-RIC/RAW/HG01617.mapped.ILLUMINA.bwa.IBS.exome.20130415.bam OUTPUT=/storage/nipm/ric/bam-vcf-pipeline/done/sorted-HG01617.bam SORT_ORDER=coordinate TMP_DIR=[/dev/shm/ric] VALIDATION_STRINGENCY=LENIENT    VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Mon Feb 15 20:49:44 PST 2016] Executing as ric@cp-119-9.local on Linux 2.6.32-504.16.2.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_72-b15; Picard version: 2.0.1(86f9d8810d6189f007e0cca41191f3fa3d1caa04_1453390683) JdkDeflater
+INFO	2016-02-15 20:52:58	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:13s.  Time for last 10,000,000:  193s.  Last read position: 2:230,675,948
+INFO	2016-02-15 20:55:35	SortSam	Read    20,000,000 records.  Elapsed time: 00:05:49s.  Time for last 10,000,000:  156s.  Last read position: 6:116,565,091
+INFO	2016-02-15 20:58:32	SortSam	Read    30,000,000 records.  Elapsed time: 00:08:46s.  Time for last 10,000,000:  176s.  Last read position: 11:13,031,707
+INFO	2016-02-15 21:01:18	SortSam	Read    40,000,000 records.  Elapsed time: 00:11:32s.  Time for last 10,000,000:  166s.  Last read position: 16:20,748,170
+INFO	2016-02-15 21:03:53	SortSam	Read    50,000,000 records.  Elapsed time: 00:14:07s.  Time for last 10,000,000:  154s.  Last read position: 22:36,681,287
+Ignoring SAM validation error: ERROR: Record 52469645, Read name SRR710422.20473266, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469647, Read name SRR710422.14047674, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469650, Read name SRR710422.2752259, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469651, Read name SRR710422.6139291, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481263, Read name SRR710422.12580790, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481308, Read name SRR710422.27016027, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481318, Read name SRR710422.22647133, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481321, Read name SRR710422.8032376, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481324, Read name SRR710422.5812893, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481327, Read name SRR710422.23094401, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481330, Read name SRR710422.2949904, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481331, Read name SRR710422.8124014, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481336, Read name SRR710422.3734300, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481339, Read name SRR710422.13503872, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481341, Read name SRR710422.6214930, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481355, Read name SRR710422.466214, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481357, Read name SRR710422.17461240, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481359, Read name SRR710422.26100924, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582944, Read name SRR710422.19574980, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582946, Read name SRR710422.14256253, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582947, Read name SRR710422.15174570, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582948, Read name SRR710422.5911393, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582949, Read name SRR710422.7298034, MAPQ should be 0 for unmapped read.
+INFO	2016-02-15 21:04:44	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2016-02-15 21:06:52	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:17:06s.  Time for last 10,000,000:  126s.  Last read position: 2:230,675,948
+INFO	2016-02-15 21:08:58	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:19:13s.  Time for last 10,000,000:  126s.  Last read position: 6:116,565,091
+INFO	2016-02-15 21:11:06	SortSam	Wrote    30,000,000 records from a sorting collection.  Elapsed time: 00:21:20s.  Time for last 10,000,000:  127s.  Last read position: 11:13,031,707
+INFO	2016-02-15 21:13:13	SortSam	Wrote    40,000,000 records from a sorting collection.  Elapsed time: 00:23:27s.  Time for last 10,000,000:  126s.  Last read position: 16:20,748,170
+INFO	2016-02-15 21:15:19	SortSam	Wrote    50,000,000 records from a sorting collection.  Elapsed time: 00:25:34s.  Time for last 10,000,000:  126s.  Last read position: 22:36,681,287
+[Mon Feb 15 21:15:57 PST 2016] picard.sam.SortSam done. Elapsed time: 26.22 minutes.
+Runtime.totalMemory()=3482845184
+-----------------------------------------------------
+sorting done
+-----------------------------------------------------
+-----------------------------------------------------
+Marking duplicates
+-----------------------------------------------------
+[Mon Feb 15 21:15:57 PST 2016] picard.sam.markduplicates.MarkDuplicates INPUT=[/storage/nipm/ric/bam-vcf-pipeline/done/sorted-HG01617.bam] OUTPUT=/storage/nipm/ric/bam-vcf-pipeline/done/marked-HG01617.bam METRICS_FILE=metrics.txt TMP_DIR=[/dev/shm/ric] VALIDATION_STRINGENCY=LENIENT    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 REMOVE_DUPLICATES=false ASSUME_SORTED=false DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Mon Feb 15 21:15:57 PST 2016] Executing as ric@cp-119-9.local on Linux 2.6.32-504.16.2.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_72-b15; Picard version: 2.0.1(86f9d8810d6189f007e0cca41191f3fa3d1caa04_1453390683) JdkDeflater
+INFO	2016-02-15 21:15:58	MarkDuplicates	Start of doWork freeMemory: 2005248784; totalMemory: 2027945984; maxMemory: 3817865216
+INFO	2016-02-15 21:15:58	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2016-02-15 21:15:58	MarkDuplicates	Will retain up to 14684096 data points before spilling to disk.
+WARNING	2016-02-15 21:15:58	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR710422.12549333. Cause: String 'SRR710422.12549333' did not start with a parsable number.
+INFO	2016-02-15 21:16:12	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:14s.  Time for last 1,000,000:   14s.  Last read position: 1:26,385,121
+INFO	2016-02-15 21:16:12	MarkDuplicates	Tracking 1700 as yet unmatched pairs. 260 records in RAM.
+INFO	2016-02-15 21:16:22	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:23s.  Time for last 1,000,000:    9s.  Last read position: 1:62,579,791
+INFO	2016-02-15 21:16:22	MarkDuplicates	Tracking 2790 as yet unmatched pairs. 310 records in RAM.
+INFO	2016-02-15 21:16:33	MarkDuplicates	Read     3,000,000 records.  Elapsed time: 00:00:35s.  Time for last 1,000,000:   11s.  Last read position: 1:120,466,408
+INFO	2016-02-15 21:16:33	MarkDuplicates	Tracking 3873 as yet unmatched pairs. 317 records in RAM.
+INFO	2016-02-15 21:16:42	MarkDuplicates	Read     4,000,000 records.  Elapsed time: 00:00:44s.  Time for last 1,000,000:    8s.  Last read position: 1:159,505,612
+INFO	2016-02-15 21:16:42	MarkDuplicates	Tracking 5122 as yet unmatched pairs. 559 records in RAM.
+INFO	2016-02-15 21:16:50	MarkDuplicates	Read     5,000,000 records.  Elapsed time: 00:00:52s.  Time for last 1,000,000:    8s.  Last read position: 1:206,671,192
+INFO	2016-02-15 21:16:50	MarkDuplicates	Tracking 5676 as yet unmatched pairs. 101 records in RAM.
+INFO	2016-02-15 21:17:00	MarkDuplicates	Read     6,000,000 records.  Elapsed time: 00:01:02s.  Time for last 1,000,000:    9s.  Last read position: 2:10,350,476
+INFO	2016-02-15 21:17:00	MarkDuplicates	Tracking 6908 as yet unmatched pairs. 757 records in RAM.
+INFO	2016-02-15 21:17:08	MarkDuplicates	Read     7,000,000 records.  Elapsed time: 00:01:10s.  Time for last 1,000,000:    8s.  Last read position: 2:73,195,644
+INFO	2016-02-15 21:17:08	MarkDuplicates	Tracking 8048 as yet unmatched pairs. 693 records in RAM.
+INFO	2016-02-15 21:17:17	MarkDuplicates	Read     8,000,000 records.  Elapsed time: 00:01:19s.  Time for last 1,000,000:    8s.  Last read position: 2:113,321,992
+INFO	2016-02-15 21:17:17	MarkDuplicates	Tracking 9211 as yet unmatched pairs. 667 records in RAM.
+INFO	2016-02-15 21:17:26	MarkDuplicates	Read     9,000,000 records.  Elapsed time: 00:01:28s.  Time for last 1,000,000:    9s.  Last read position: 2:175,333,655
+INFO	2016-02-15 21:17:26	MarkDuplicates	Tracking 10393 as yet unmatched pairs. 283 records in RAM.
+INFO	2016-02-15 21:17:35	MarkDuplicates	Read    10,000,000 records.  Elapsed time: 00:01:37s.  Time for last 1,000,000:    8s.  Last read position: 2:230,675,948
+INFO	2016-02-15 21:17:35	MarkDuplicates	Tracking 11159 as yet unmatched pairs. 90 records in RAM.
+INFO	2016-02-15 21:17:43	MarkDuplicates	Read    11,000,000 records.  Elapsed time: 00:01:45s.  Time for last 1,000,000:    8s.  Last read position: 3:42,906,625
+INFO	2016-02-15 21:17:43	MarkDuplicates	Tracking 11914 as yet unmatched pairs. 641 records in RAM.
+INFO	2016-02-15 21:18:32	MarkDuplicates	Read    12,000,000 records.  Elapsed time: 00:02:33s.  Time for last 1,000,000:   48s.  Last read position: 3:101,383,731
+INFO	2016-02-15 21:18:32	MarkDuplicates	Tracking 12638 as yet unmatched pairs. 459 records in RAM.
+INFO	2016-02-15 21:18:40	MarkDuplicates	Read    13,000,000 records.  Elapsed time: 00:02:42s.  Time for last 1,000,000:    8s.  Last read position: 3:169,802,758
+INFO	2016-02-15 21:18:40	MarkDuplicates	Tracking 13253 as yet unmatched pairs. 150 records in RAM.
+INFO	2016-02-15 21:18:49	MarkDuplicates	Read    14,000,000 records.  Elapsed time: 00:02:51s.  Time for last 1,000,000:    8s.  Last read position: 4:40,115,103
+INFO	2016-02-15 21:18:49	MarkDuplicates	Tracking 14458 as yet unmatched pairs. 740 records in RAM.
+INFO	2016-02-15 21:19:06	MarkDuplicates	Read    15,000,000 records.  Elapsed time: 00:03:08s.  Time for last 1,000,000:   17s.  Last read position: 4:123,171,602
+INFO	2016-02-15 21:19:06	MarkDuplicates	Tracking 15127 as yet unmatched pairs. 319 records in RAM.
+INFO	2016-02-15 21:19:15	MarkDuplicates	Read    16,000,000 records.  Elapsed time: 00:03:17s.  Time for last 1,000,000:    9s.  Last read position: 5:37,064,040
+INFO	2016-02-15 21:19:15	MarkDuplicates	Tracking 15860 as yet unmatched pairs. 908 records in RAM.
+INFO	2016-02-15 21:19:25	MarkDuplicates	Read    17,000,000 records.  Elapsed time: 00:03:27s.  Time for last 1,000,000:    9s.  Last read position: 5:125,960,327
+INFO	2016-02-15 21:19:25	MarkDuplicates	Tracking 16327 as yet unmatched pairs. 396 records in RAM.
+INFO	2016-02-15 21:19:35	MarkDuplicates	Read    18,000,000 records.  Elapsed time: 00:03:36s.  Time for last 1,000,000:    9s.  Last read position: 5:176,002,008
+INFO	2016-02-15 21:19:35	MarkDuplicates	Tracking 17285 as yet unmatched pairs. 615 records in RAM.
+INFO	2016-02-15 21:19:44	MarkDuplicates	Read    19,000,000 records.  Elapsed time: 00:03:46s.  Time for last 1,000,000:    9s.  Last read position: 6:34,497,439
+INFO	2016-02-15 21:19:44	MarkDuplicates	Tracking 17254 as yet unmatched pairs. 955 records in RAM.
+INFO	2016-02-15 21:20:09	MarkDuplicates	Read    20,000,000 records.  Elapsed time: 00:04:10s.  Time for last 1,000,000:   24s.  Last read position: 6:116,565,091
+INFO	2016-02-15 21:20:09	MarkDuplicates	Tracking 17603 as yet unmatched pairs. 400 records in RAM.
+INFO	2016-02-15 21:20:17	MarkDuplicates	Read    21,000,000 records.  Elapsed time: 00:04:19s.  Time for last 1,000,000:    8s.  Last read position: 7:11,418,634
+INFO	2016-02-15 21:20:17	MarkDuplicates	Tracking 18270 as yet unmatched pairs. 1561 records in RAM.
+INFO	2016-02-15 21:20:26	MarkDuplicates	Read    22,000,000 records.  Elapsed time: 00:04:28s.  Time for last 1,000,000:    9s.  Last read position: 7:76,950,644
+INFO	2016-02-15 21:20:26	MarkDuplicates	Tracking 19184 as yet unmatched pairs. 1320 records in RAM.
+INFO	2016-02-15 21:20:35	MarkDuplicates	Read    23,000,000 records.  Elapsed time: 00:04:37s.  Time for last 1,000,000:    9s.  Last read position: 7:141,734,527
+INFO	2016-02-15 21:20:35	MarkDuplicates	Tracking 19159 as yet unmatched pairs. 404 records in RAM.
+INFO	2016-02-15 21:20:44	MarkDuplicates	Read    24,000,000 records.  Elapsed time: 00:04:46s.  Time for last 1,000,000:    8s.  Last read position: 8:38,840,489
+INFO	2016-02-15 21:20:44	MarkDuplicates	Tracking 19036 as yet unmatched pairs. 712 records in RAM.
+INFO	2016-02-15 21:20:52	MarkDuplicates	Read    25,000,000 records.  Elapsed time: 00:04:54s.  Time for last 1,000,000:    8s.  Last read position: 8:144,994,050
+INFO	2016-02-15 21:20:52	MarkDuplicates	Tracking 19176 as yet unmatched pairs. 36 records in RAM.
+INFO	2016-02-15 21:21:02	MarkDuplicates	Read    26,000,000 records.  Elapsed time: 00:05:03s.  Time for last 1,000,000:    9s.  Last read position: 9:84,562,543
+INFO	2016-02-15 21:21:02	MarkDuplicates	Tracking 19465 as yet unmatched pairs. 1058 records in RAM.
+INFO	2016-02-15 21:21:11	MarkDuplicates	Read    27,000,000 records.  Elapsed time: 00:05:13s.  Time for last 1,000,000:    9s.  Last read position: 9:134,467,375
+INFO	2016-02-15 21:21:11	MarkDuplicates	Tracking 19277 as yet unmatched pairs. 200 records in RAM.
+INFO	2016-02-15 21:21:20	MarkDuplicates	Read    28,000,000 records.  Elapsed time: 00:05:21s.  Time for last 1,000,000:    8s.  Last read position: 10:48,774,337
+INFO	2016-02-15 21:21:20	MarkDuplicates	Tracking 20577 as yet unmatched pairs. 2395 records in RAM.
+INFO	2016-02-15 21:21:27	MarkDuplicates	Read    29,000,000 records.  Elapsed time: 00:05:29s.  Time for last 1,000,000:    7s.  Last read position: 10:103,997,785
+INFO	2016-02-15 21:21:27	MarkDuplicates	Tracking 19070 as yet unmatched pairs. 372 records in RAM.
+INFO	2016-02-15 21:21:54	MarkDuplicates	Read    30,000,000 records.  Elapsed time: 00:05:56s.  Time for last 1,000,000:   26s.  Last read position: 11:13,031,707
+INFO	2016-02-15 21:21:54	MarkDuplicates	Tracking 19141 as yet unmatched pairs. 1586 records in RAM.
+INFO	2016-02-15 21:22:06	MarkDuplicates	Read    31,000,000 records.  Elapsed time: 00:06:07s.  Time for last 1,000,000:   11s.  Last read position: 11:65,303,592
+INFO	2016-02-15 21:22:06	MarkDuplicates	Tracking 19233 as yet unmatched pairs. 1205 records in RAM.
+INFO	2016-02-15 21:22:14	MarkDuplicates	Read    32,000,000 records.  Elapsed time: 00:06:16s.  Time for last 1,000,000:    8s.  Last read position: 11:118,827,944
+INFO	2016-02-15 21:22:14	MarkDuplicates	Tracking 18711 as yet unmatched pairs. 232 records in RAM.
+INFO	2016-02-15 21:22:23	MarkDuplicates	Read    33,000,000 records.  Elapsed time: 00:06:25s.  Time for last 1,000,000:    9s.  Last read position: 12:38,625,949
+INFO	2016-02-15 21:22:23	MarkDuplicates	Tracking 18557 as yet unmatched pairs. 1631 records in RAM.
+INFO	2016-02-15 21:22:31	MarkDuplicates	Read    34,000,000 records.  Elapsed time: 00:06:33s.  Time for last 1,000,000:    7s.  Last read position: 12:93,210,028
+INFO	2016-02-15 21:22:31	MarkDuplicates	Tracking 18250 as yet unmatched pairs. 945 records in RAM.
+INFO	2016-02-15 21:22:40	MarkDuplicates	Read    35,000,000 records.  Elapsed time: 00:06:41s.  Time for last 1,000,000:    8s.  Last read position: 13:30,805,452
+INFO	2016-02-15 21:22:40	MarkDuplicates	Tracking 17720 as yet unmatched pairs. 886 records in RAM.
+INFO	2016-02-15 21:22:48	MarkDuplicates	Read    36,000,000 records.  Elapsed time: 00:06:50s.  Time for last 1,000,000:    8s.  Last read position: 14:23,869,892
+INFO	2016-02-15 21:22:48	MarkDuplicates	Tracking 17739 as yet unmatched pairs. 1423 records in RAM.
+INFO	2016-02-15 21:22:58	MarkDuplicates	Read    37,000,000 records.  Elapsed time: 00:06:59s.  Time for last 1,000,000:    9s.  Last read position: 14:93,185,211
+INFO	2016-02-15 21:22:58	MarkDuplicates	Tracking 16938 as yet unmatched pairs. 201 records in RAM.
+INFO	2016-02-15 21:23:07	MarkDuplicates	Read    38,000,000 records.  Elapsed time: 00:07:08s.  Time for last 1,000,000:    9s.  Last read position: 15:43,888,480
+INFO	2016-02-15 21:23:07	MarkDuplicates	Tracking 17202 as yet unmatched pairs. 1430 records in RAM.
+INFO	2016-02-15 21:23:15	MarkDuplicates	Read    39,000,000 records.  Elapsed time: 00:07:16s.  Time for last 1,000,000:    7s.  Last read position: 15:86,279,359
+INFO	2016-02-15 21:23:15	MarkDuplicates	Tracking 16425 as yet unmatched pairs. 353 records in RAM.
+INFO	2016-02-15 21:23:23	MarkDuplicates	Read    40,000,000 records.  Elapsed time: 00:07:25s.  Time for last 1,000,000:    8s.  Last read position: 16:20,748,170
+INFO	2016-02-15 21:23:23	MarkDuplicates	Tracking 15995 as yet unmatched pairs. 1769 records in RAM.
+INFO	2016-02-15 21:23:32	MarkDuplicates	Read    41,000,000 records.  Elapsed time: 00:07:34s.  Time for last 1,000,000:    8s.  Last read position: 16:69,790,318
+INFO	2016-02-15 21:23:32	MarkDuplicates	Tracking 15391 as yet unmatched pairs. 701 records in RAM.
+INFO	2016-02-15 21:23:41	MarkDuplicates	Read    42,000,000 records.  Elapsed time: 00:07:43s.  Time for last 1,000,000:    9s.  Last read position: 17:10,547,896
+INFO	2016-02-15 21:23:41	MarkDuplicates	Tracking 14877 as yet unmatched pairs. 2317 records in RAM.
+INFO	2016-02-15 21:24:32	MarkDuplicates	Read    43,000,000 records.  Elapsed time: 00:08:34s.  Time for last 1,000,000:   50s.  Last read position: 17:39,388,726
+INFO	2016-02-15 21:24:32	MarkDuplicates	Tracking 14418 as yet unmatched pairs. 1630 records in RAM.
+INFO	2016-02-15 21:24:40	MarkDuplicates	Read    44,000,000 records.  Elapsed time: 00:08:42s.  Time for last 1,000,000:    7s.  Last read position: 17:72,436,514
+INFO	2016-02-15 21:24:40	MarkDuplicates	Tracking 13333 as yet unmatched pairs. 332 records in RAM.
+INFO	2016-02-15 21:24:55	MarkDuplicates	Read    45,000,000 records.  Elapsed time: 00:08:57s.  Time for last 1,000,000:   15s.  Last read position: 18:59,221,418
+INFO	2016-02-15 21:24:55	MarkDuplicates	Tracking 12583 as yet unmatched pairs. 229 records in RAM.
+INFO	2016-02-15 21:25:05	MarkDuplicates	Read    46,000,000 records.  Elapsed time: 00:09:07s.  Time for last 1,000,000:    9s.  Last read position: 19:16,952,616
+INFO	2016-02-15 21:25:05	MarkDuplicates	Tracking 11412 as yet unmatched pairs. 1571 records in RAM.
+INFO	2016-02-15 21:25:14	MarkDuplicates	Read    47,000,000 records.  Elapsed time: 00:09:16s.  Time for last 1,000,000:    8s.  Last read position: 19:49,424,346
+INFO	2016-02-15 21:25:14	MarkDuplicates	Tracking 10434 as yet unmatched pairs. 471 records in RAM.
+INFO	2016-02-15 21:25:22	MarkDuplicates	Read    48,000,000 records.  Elapsed time: 00:09:24s.  Time for last 1,000,000:    8s.  Last read position: 20:30,857,469
+INFO	2016-02-15 21:25:22	MarkDuplicates	Tracking 9672 as yet unmatched pairs. 728 records in RAM.
+INFO	2016-02-15 21:25:32	MarkDuplicates	Read    49,000,000 records.  Elapsed time: 00:09:33s.  Time for last 1,000,000:    9s.  Last read position: 21:38,309,608
+INFO	2016-02-15 21:25:32	MarkDuplicates	Tracking 8455 as yet unmatched pairs. 260 records in RAM.
+INFO	2016-02-15 21:25:41	MarkDuplicates	Read    50,000,000 records.  Elapsed time: 00:09:42s.  Time for last 1,000,000:    9s.  Last read position: 22:36,681,287
+INFO	2016-02-15 21:25:41	MarkDuplicates	Tracking 6918 as yet unmatched pairs. 662 records in RAM.
+INFO	2016-02-15 21:25:50	MarkDuplicates	Read    51,000,000 records.  Elapsed time: 00:09:52s.  Time for last 1,000,000:    9s.  Last read position: X:48,634,750
+INFO	2016-02-15 21:25:50	MarkDuplicates	Tracking 5663 as yet unmatched pairs. 1493 records in RAM.
+INFO	2016-02-15 21:25:59	MarkDuplicates	Read    52,000,000 records.  Elapsed time: 00:10:01s.  Time for last 1,000,000:    8s.  Last read position: X:136,113,509
+INFO	2016-02-15 21:25:59	MarkDuplicates	Tracking 4577 as yet unmatched pairs. 301 records in RAM.
+Ignoring SAM validation error: ERROR: Record 52469645, Read name SRR710422.20473266, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469647, Read name SRR710422.14047674, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469650, Read name SRR710422.2752259, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469651, Read name SRR710422.6139291, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481263, Read name SRR710422.12580790, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481308, Read name SRR710422.27016027, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481318, Read name SRR710422.22647133, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481321, Read name SRR710422.8032376, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481324, Read name SRR710422.5812893, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481327, Read name SRR710422.23094401, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481330, Read name SRR710422.2949904, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481331, Read name SRR710422.8124014, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481336, Read name SRR710422.3734300, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481339, Read name SRR710422.13503872, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481341, Read name SRR710422.6214930, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481355, Read name SRR710422.466214, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481357, Read name SRR710422.17461240, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481359, Read name SRR710422.26100924, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582944, Read name SRR710422.19574980, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582946, Read name SRR710422.14256253, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582947, Read name SRR710422.15174570, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582948, Read name SRR710422.5911393, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582949, Read name SRR710422.7298034, MAPQ should be 0 for unmapped read.
+INFO	2016-02-15 21:26:07	MarkDuplicates	Read 52909319 records. 0 pairs never matched.
+INFO	2016-02-15 21:26:20	MarkDuplicates	After buildSortedReadEndLists freeMemory: 4213055008; totalMemory: 4242014208; maxMemory: 4242014208
+INFO	2016-02-15 21:26:20	MarkDuplicates	Will retain up to 132562944 duplicate indices before spilling to disk.
+INFO	2016-02-15 21:26:20	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2016-02-15 21:26:35	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2016-02-15 21:26:51	MarkDuplicates	Sorting list of duplicate records.
+INFO	2016-02-15 21:26:55	MarkDuplicates	After generateDuplicateIndexes freeMemory: 3145145520; totalMemory: 4233625600; maxMemory: 4233625600
+INFO	2016-02-15 21:26:55	MarkDuplicates	Marking 2255416 records as duplicates.
+INFO	2016-02-15 21:26:55	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2016-02-15 21:29:53	MarkDuplicates	Written    10,000,000 records.  Elapsed time: 00:02:58s.  Time for last 10,000,000:  178s.  Last read position: 2:230,675,948
+INFO	2016-02-15 21:32:53	MarkDuplicates	Written    20,000,000 records.  Elapsed time: 00:05:57s.  Time for last 10,000,000:  179s.  Last read position: 6:116,565,091
+INFO	2016-02-15 21:35:56	MarkDuplicates	Written    30,000,000 records.  Elapsed time: 00:09:00s.  Time for last 10,000,000:  182s.  Last read position: 11:13,031,707
+INFO	2016-02-15 21:38:59	MarkDuplicates	Written    40,000,000 records.  Elapsed time: 00:12:03s.  Time for last 10,000,000:  183s.  Last read position: 16:20,748,170
+INFO	2016-02-15 21:42:01	MarkDuplicates	Written    50,000,000 records.  Elapsed time: 00:15:06s.  Time for last 10,000,000:  182s.  Last read position: 22:36,681,287
+Ignoring SAM validation error: ERROR: Record 52469645, Read name SRR710422.20473266, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469647, Read name SRR710422.14047674, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469650, Read name SRR710422.2752259, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469651, Read name SRR710422.6139291, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481263, Read name SRR710422.12580790, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481308, Read name SRR710422.27016027, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481318, Read name SRR710422.22647133, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481321, Read name SRR710422.8032376, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481324, Read name SRR710422.5812893, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481327, Read name SRR710422.23094401, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481330, Read name SRR710422.2949904, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481331, Read name SRR710422.8124014, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481336, Read name SRR710422.3734300, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481339, Read name SRR710422.13503872, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481341, Read name SRR710422.6214930, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481355, Read name SRR710422.466214, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481357, Read name SRR710422.17461240, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481359, Read name SRR710422.26100924, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582944, Read name SRR710422.19574980, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582946, Read name SRR710422.14256253, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582947, Read name SRR710422.15174570, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582948, Read name SRR710422.5911393, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582949, Read name SRR710422.7298034, MAPQ should be 0 for unmapped read.
+INFO	2016-02-15 21:42:55	MarkDuplicates	Before output close freeMemory: 4263563632; totalMemory: 4294443008; maxMemory: 4294443008
+INFO	2016-02-15 21:42:55	MarkDuplicates	After output close freeMemory: 4263562680; totalMemory: 4294443008; maxMemory: 4294443008
+[Mon Feb 15 21:42:55 PST 2016] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 26.96 minutes.
+Runtime.totalMemory()=4294443008
+-----------------------------------------------------
+Marking Dupes Done
+-----------------------------------------------------
+-----------------------------------------------------
+Add Or Replace Groups
+-----------------------------------------------------
+[Mon Feb 15 21:42:56 PST 2016] picard.sam.AddOrReplaceReadGroups INPUT=/storage/nipm/ric/bam-vcf-pipeline/done/marked-HG01617.bam OUTPUT=/storage/nipm/ric/bam-vcf-pipeline/done/group-HG01617.bam RGID=group1 RGLB=lib1 RGPL=illumina RGPU=unit1 RGSM=HG01617 TMP_DIR=[/dev/shm/ric] VALIDATION_STRINGENCY=LENIENT    VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Mon Feb 15 21:42:56 PST 2016] Executing as ric@cp-119-9.local on Linux 2.6.32-504.16.2.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_72-b15; Picard version: 2.0.1(86f9d8810d6189f007e0cca41191f3fa3d1caa04_1453390683) JdkDeflater
+INFO	2016-02-15 21:42:56	AddOrReplaceReadGroups	Created read group ID=group1 PL=illumina LB=lib1 SM=HG01617
+
+INFO	2016-02-15 21:43:19	AddOrReplaceReadGroups	Processed     1,000,000 records.  Elapsed time: 00:00:23s.  Time for last 1,000,000:   23s.  Last read position: 1:26,385,121
+INFO	2016-02-15 21:43:37	AddOrReplaceReadGroups	Processed     2,000,000 records.  Elapsed time: 00:00:41s.  Time for last 1,000,000:   18s.  Last read position: 1:62,579,791
+INFO	2016-02-15 21:43:55	AddOrReplaceReadGroups	Processed     3,000,000 records.  Elapsed time: 00:00:59s.  Time for last 1,000,000:   17s.  Last read position: 1:120,466,408
+INFO	2016-02-15 21:44:13	AddOrReplaceReadGroups	Processed     4,000,000 records.  Elapsed time: 00:01:16s.  Time for last 1,000,000:   17s.  Last read position: 1:159,505,612
+INFO	2016-02-15 21:44:30	AddOrReplaceReadGroups	Processed     5,000,000 records.  Elapsed time: 00:01:34s.  Time for last 1,000,000:   17s.  Last read position: 1:206,671,192
+INFO	2016-02-15 21:44:48	AddOrReplaceReadGroups	Processed     6,000,000 records.  Elapsed time: 00:01:52s.  Time for last 1,000,000:   17s.  Last read position: 2:10,350,476
+INFO	2016-02-15 21:45:06	AddOrReplaceReadGroups	Processed     7,000,000 records.  Elapsed time: 00:02:10s.  Time for last 1,000,000:   17s.  Last read position: 2:73,195,644
+INFO	2016-02-15 21:45:24	AddOrReplaceReadGroups	Processed     8,000,000 records.  Elapsed time: 00:02:27s.  Time for last 1,000,000:   17s.  Last read position: 2:113,321,992
+INFO	2016-02-15 21:45:42	AddOrReplaceReadGroups	Processed     9,000,000 records.  Elapsed time: 00:02:46s.  Time for last 1,000,000:   18s.  Last read position: 2:175,333,655
+INFO	2016-02-15 21:46:00	AddOrReplaceReadGroups	Processed    10,000,000 records.  Elapsed time: 00:03:04s.  Time for last 1,000,000:   17s.  Last read position: 2:230,675,948
+INFO	2016-02-15 21:46:18	AddOrReplaceReadGroups	Processed    11,000,000 records.  Elapsed time: 00:03:22s.  Time for last 1,000,000:   18s.  Last read position: 3:42,906,625
+INFO	2016-02-15 21:46:36	AddOrReplaceReadGroups	Processed    12,000,000 records.  Elapsed time: 00:03:40s.  Time for last 1,000,000:   18s.  Last read position: 3:101,383,731
+INFO	2016-02-15 21:46:54	AddOrReplaceReadGroups	Processed    13,000,000 records.  Elapsed time: 00:03:58s.  Time for last 1,000,000:   18s.  Last read position: 3:169,802,758
+INFO	2016-02-15 21:47:12	AddOrReplaceReadGroups	Processed    14,000,000 records.  Elapsed time: 00:04:16s.  Time for last 1,000,000:   18s.  Last read position: 4:40,115,103
+INFO	2016-02-15 21:47:30	AddOrReplaceReadGroups	Processed    15,000,000 records.  Elapsed time: 00:04:34s.  Time for last 1,000,000:   18s.  Last read position: 4:123,171,602
+INFO	2016-02-15 21:47:49	AddOrReplaceReadGroups	Processed    16,000,000 records.  Elapsed time: 00:04:53s.  Time for last 1,000,000:   18s.  Last read position: 5:37,064,040
+INFO	2016-02-15 21:48:07	AddOrReplaceReadGroups	Processed    17,000,000 records.  Elapsed time: 00:05:11s.  Time for last 1,000,000:   18s.  Last read position: 5:125,960,327
+INFO	2016-02-15 21:48:25	AddOrReplaceReadGroups	Processed    18,000,000 records.  Elapsed time: 00:05:29s.  Time for last 1,000,000:   18s.  Last read position: 5:176,002,008
+INFO	2016-02-15 21:48:43	AddOrReplaceReadGroups	Processed    19,000,000 records.  Elapsed time: 00:05:47s.  Time for last 1,000,000:   18s.  Last read position: 6:34,497,439
+INFO	2016-02-15 21:49:01	AddOrReplaceReadGroups	Processed    20,000,000 records.  Elapsed time: 00:06:05s.  Time for last 1,000,000:   18s.  Last read position: 6:116,565,091
+INFO	2016-02-15 21:49:20	AddOrReplaceReadGroups	Processed    21,000,000 records.  Elapsed time: 00:06:23s.  Time for last 1,000,000:   18s.  Last read position: 7:11,418,634
+INFO	2016-02-15 21:49:38	AddOrReplaceReadGroups	Processed    22,000,000 records.  Elapsed time: 00:06:41s.  Time for last 1,000,000:   18s.  Last read position: 7:76,950,644
+INFO	2016-02-15 21:49:55	AddOrReplaceReadGroups	Processed    23,000,000 records.  Elapsed time: 00:06:59s.  Time for last 1,000,000:   17s.  Last read position: 7:141,734,527
+INFO	2016-02-15 21:50:13	AddOrReplaceReadGroups	Processed    24,000,000 records.  Elapsed time: 00:07:17s.  Time for last 1,000,000:   17s.  Last read position: 8:38,840,489
+INFO	2016-02-15 21:50:31	AddOrReplaceReadGroups	Processed    25,000,000 records.  Elapsed time: 00:07:34s.  Time for last 1,000,000:   17s.  Last read position: 8:144,994,050
+INFO	2016-02-15 21:50:49	AddOrReplaceReadGroups	Processed    26,000,000 records.  Elapsed time: 00:07:52s.  Time for last 1,000,000:   17s.  Last read position: 9:84,562,543
+INFO	2016-02-15 21:51:06	AddOrReplaceReadGroups	Processed    27,000,000 records.  Elapsed time: 00:08:10s.  Time for last 1,000,000:   17s.  Last read position: 9:134,467,375
+INFO	2016-02-15 21:51:24	AddOrReplaceReadGroups	Processed    28,000,000 records.  Elapsed time: 00:08:28s.  Time for last 1,000,000:   17s.  Last read position: 10:48,774,337
+INFO	2016-02-15 21:51:41	AddOrReplaceReadGroups	Processed    29,000,000 records.  Elapsed time: 00:08:45s.  Time for last 1,000,000:   17s.  Last read position: 10:103,997,785
+INFO	2016-02-15 21:51:59	AddOrReplaceReadGroups	Processed    30,000,000 records.  Elapsed time: 00:09:03s.  Time for last 1,000,000:   17s.  Last read position: 11:13,031,707
+INFO	2016-02-15 21:52:17	AddOrReplaceReadGroups	Processed    31,000,000 records.  Elapsed time: 00:09:21s.  Time for last 1,000,000:   17s.  Last read position: 11:65,303,592
+INFO	2016-02-15 21:52:35	AddOrReplaceReadGroups	Processed    32,000,000 records.  Elapsed time: 00:09:39s.  Time for last 1,000,000:   18s.  Last read position: 11:118,827,944
+INFO	2016-02-15 21:52:53	AddOrReplaceReadGroups	Processed    33,000,000 records.  Elapsed time: 00:09:56s.  Time for last 1,000,000:   17s.  Last read position: 12:38,625,949
+INFO	2016-02-15 21:53:10	AddOrReplaceReadGroups	Processed    34,000,000 records.  Elapsed time: 00:10:14s.  Time for last 1,000,000:   17s.  Last read position: 12:93,210,028
+INFO	2016-02-15 21:53:28	AddOrReplaceReadGroups	Processed    35,000,000 records.  Elapsed time: 00:10:32s.  Time for last 1,000,000:   17s.  Last read position: 13:30,805,452
+INFO	2016-02-15 21:53:46	AddOrReplaceReadGroups	Processed    36,000,000 records.  Elapsed time: 00:10:50s.  Time for last 1,000,000:   18s.  Last read position: 14:23,869,892
+INFO	2016-02-15 21:54:04	AddOrReplaceReadGroups	Processed    37,000,000 records.  Elapsed time: 00:11:07s.  Time for last 1,000,000:   17s.  Last read position: 14:93,185,211
+INFO	2016-02-15 21:54:21	AddOrReplaceReadGroups	Processed    38,000,000 records.  Elapsed time: 00:11:25s.  Time for last 1,000,000:   17s.  Last read position: 15:43,888,480
+INFO	2016-02-15 21:54:39	AddOrReplaceReadGroups	Processed    39,000,000 records.  Elapsed time: 00:11:43s.  Time for last 1,000,000:   17s.  Last read position: 15:86,279,359
+INFO	2016-02-15 21:54:57	AddOrReplaceReadGroups	Processed    40,000,000 records.  Elapsed time: 00:12:01s.  Time for last 1,000,000:   17s.  Last read position: 16:20,748,170
+INFO	2016-02-15 21:58:15	AddOrReplaceReadGroups	Processed    41,000,000 records.  Elapsed time: 00:15:19s.  Time for last 1,000,000:  198s.  Last read position: 16:69,790,318
+INFO	2016-02-15 21:58:32	AddOrReplaceReadGroups	Processed    42,000,000 records.  Elapsed time: 00:15:36s.  Time for last 1,000,000:   16s.  Last read position: 17:10,547,896
+INFO	2016-02-15 21:58:50	AddOrReplaceReadGroups	Processed    43,000,000 records.  Elapsed time: 00:15:53s.  Time for last 1,000,000:   17s.  Last read position: 17:39,388,726
+INFO	2016-02-15 21:59:08	AddOrReplaceReadGroups	Processed    44,000,000 records.  Elapsed time: 00:16:11s.  Time for last 1,000,000:   18s.  Last read position: 17:72,436,514
+INFO	2016-02-15 21:59:26	AddOrReplaceReadGroups	Processed    45,000,000 records.  Elapsed time: 00:16:29s.  Time for last 1,000,000:   18s.  Last read position: 18:59,221,418
+INFO	2016-02-15 21:59:43	AddOrReplaceReadGroups	Processed    46,000,000 records.  Elapsed time: 00:16:47s.  Time for last 1,000,000:   17s.  Last read position: 19:16,952,616
+INFO	2016-02-15 22:00:02	AddOrReplaceReadGroups	Processed    47,000,000 records.  Elapsed time: 00:17:05s.  Time for last 1,000,000:   18s.  Last read position: 19:49,424,346
+INFO	2016-02-15 22:00:20	AddOrReplaceReadGroups	Processed    48,000,000 records.  Elapsed time: 00:17:24s.  Time for last 1,000,000:   18s.  Last read position: 20:30,857,469
+INFO	2016-02-15 22:00:38	AddOrReplaceReadGroups	Processed    49,000,000 records.  Elapsed time: 00:17:41s.  Time for last 1,000,000:   17s.  Last read position: 21:38,309,608
+INFO	2016-02-15 22:00:56	AddOrReplaceReadGroups	Processed    50,000,000 records.  Elapsed time: 00:17:59s.  Time for last 1,000,000:   17s.  Last read position: 22:36,681,287
+INFO	2016-02-15 22:01:14	AddOrReplaceReadGroups	Processed    51,000,000 records.  Elapsed time: 00:18:17s.  Time for last 1,000,000:   17s.  Last read position: X:48,634,750
+INFO	2016-02-15 22:01:31	AddOrReplaceReadGroups	Processed    52,000,000 records.  Elapsed time: 00:18:35s.  Time for last 1,000,000:   17s.  Last read position: X:136,113,509
+Ignoring SAM validation error: ERROR: Record 52469645, Read name SRR710422.20473266, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469647, Read name SRR710422.14047674, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469650, Read name SRR710422.2752259, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469651, Read name SRR710422.6139291, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481263, Read name SRR710422.12580790, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481308, Read name SRR710422.27016027, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481318, Read name SRR710422.22647133, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481321, Read name SRR710422.8032376, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481324, Read name SRR710422.5812893, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481327, Read name SRR710422.23094401, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481330, Read name SRR710422.2949904, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481331, Read name SRR710422.8124014, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481336, Read name SRR710422.3734300, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481339, Read name SRR710422.13503872, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481341, Read name SRR710422.6214930, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481355, Read name SRR710422.466214, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481357, Read name SRR710422.17461240, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481359, Read name SRR710422.26100924, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582944, Read name SRR710422.19574980, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582946, Read name SRR710422.14256253, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582947, Read name SRR710422.15174570, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582948, Read name SRR710422.5911393, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582949, Read name SRR710422.7298034, MAPQ should be 0 for unmapped read.
+[Mon Feb 15 22:01:48 PST 2016] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 18.87 minutes.
+Runtime.totalMemory()=1491075072
+-----------------------------------------------------
+replacing groups done
+-----------------------------------------------------
+-----------------------------------------------------
+Build Bam Index HG01617.mapped.ILLUMINA.bwa.IBS.exome.20130415.bam
+-----------------------------------------------------
+[Mon Feb 15 22:01:48 PST 2016] picard.sam.BuildBamIndex INPUT=/storage/nipm/ric/bam-vcf-pipeline/done/group-HG01617.bam OUTPUT=/storage/nipm/ric/bam-vcf-pipeline/done/group-HG01617.bai TMP_DIR=[/dev/shm/ric] VALIDATION_STRINGENCY=LENIENT    VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Mon Feb 15 22:01:48 PST 2016] Executing as ric@cp-119-9.local on Linux 2.6.32-504.16.2.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_72-b15; Picard version: 2.0.1(86f9d8810d6189f007e0cca41191f3fa3d1caa04_1453390683) JdkDeflater
+Ignoring SAM validation error: ERROR: Record 52469645, Read name SRR710422.20473266, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469647, Read name SRR710422.14047674, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469650, Read name SRR710422.2752259, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52469651, Read name SRR710422.6139291, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481263, Read name SRR710422.12580790, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481308, Read name SRR710422.27016027, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481318, Read name SRR710422.22647133, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481321, Read name SRR710422.8032376, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481324, Read name SRR710422.5812893, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481327, Read name SRR710422.23094401, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481330, Read name SRR710422.2949904, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481331, Read name SRR710422.8124014, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481336, Read name SRR710422.3734300, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481339, Read name SRR710422.13503872, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481341, Read name SRR710422.6214930, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481355, Read name SRR710422.466214, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481357, Read name SRR710422.17461240, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52481359, Read name SRR710422.26100924, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582944, Read name SRR710422.19574980, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582946, Read name SRR710422.14256253, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582947, Read name SRR710422.15174570, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582948, Read name SRR710422.5911393, MAPQ should be 0 for unmapped read.
+Ignoring SAM validation error: ERROR: Record 52582949, Read name SRR710422.7298034, MAPQ should be 0 for unmapped read.
+INFO	2016-02-15 22:04:31	BuildBamIndex	Successfully wrote bam index file /storage/nipm/ric/bam-vcf-pipeline/done/group-HG01617.bai
+[Mon Feb 15 22:04:31 PST 2016] picard.sam.BuildBamIndex done. Elapsed time: 2.71 minutes.
+Runtime.totalMemory()=1654652928
+-----------------------------------------------------
+done building index 
+-----------------------------------------------------
+-----------------------------------------------------
+FUN TIME  Variant Discovery HG01617.mapped.ILLUMINA.bwa.IBS.exome.20130415.bam
+-----------------------------------------------------
+INFO  22:04:37,246 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  22:04:37,250 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.5-0-g36282e4, Compiled 2015/11/25 04:03:56 
+INFO  22:04:37,250 HelpFormatter - Copyright (c) 2010 The Broad Institute 
+INFO  22:04:37,250 HelpFormatter - For support and documentation go to http://www.broadinstitute.org/gatk 
+INFO  22:04:37,254 HelpFormatter - Program Args: -T UnifiedGenotyper -R /storage/nipm/REFERENCES/G1k-v37/human_g1k_v37.fasta -nct 4 -nt 8 -I /storage/nipm/ric/bam-vcf-pipeline/done/group-HG01617.bam -o /storage/nipm/ric/bam-vcf-pipeline/done/HG01617.vcf 
+INFO  22:04:37,258 HelpFormatter - Executing as ric@cp-119-9.local on Linux 2.6.32-504.16.2.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_72-b15. 
+INFO  22:04:37,258 HelpFormatter - Date/Time: 2016/02/15 22:04:37 
+INFO  22:04:37,258 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  22:04:37,259 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  22:04:37,971 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  22:04:38,201 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 250 
+INFO  22:04:38,207 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  22:04:38,370 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.14 
+INFO  22:04:38,446 MicroScheduler - Running the GATK in parallel mode with 32 total threads, 4 CPU thread(s) for each of 8 data thread(s), of 32 processors available on this machine 
+INFO  22:04:38,785 GenomeAnalysisEngine - Preparing for traversal over 1 BAM files 
+INFO  22:04:39,328 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  22:04:39,340 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  22:04:39,340 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  22:04:39,341 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+INFO  22:04:39,440 StrandBiasTest - SAM/BAM data was found. Attempting to use read data to calculate strand bias annotations values. 
+WARN  22:04:39,440 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+INFO  22:04:39,442 StrandBiasTest - SAM/BAM data was found. Attempting to use read data to calculate strand bias annotations values. 
+INFO  22:04:39,605 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  22:04:39,681 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.08 
+INFO  22:04:39,682 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  22:04:39,707 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.02 
+INFO  22:04:39,710 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  22:04:39,733 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.02 
+INFO  22:04:39,733 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  22:04:39,763 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.03 
+INFO  22:04:39,764 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  22:04:39,769 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.01 
+INFO  22:04:39,793 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  22:04:39,831 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.04 
+INFO  22:04:39,837 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  22:04:39,855 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.02 
+INFO  22:05:09,841 ProgressMeter -       1:3590097   3473408.0    30.0 s       8.0 s        0.1%     7.2 h       7.2 h 
+INFO  22:05:39,902 ProgressMeter -      1:12615781   1.2484608E7    60.0 s       4.0 s        0.4%     4.1 h       4.1 h 
+INFO  22:06:19,906 ProgressMeter -      1:24559533   2.4428544E7   100.0 s       4.0 s        0.8%     3.5 h       3.5 h 
+INFO  22:06:49,907 ProgressMeter -      1:35372973   3.5258368E7     2.2 m       3.0 s        1.1%     3.2 h       3.1 h 
+INFO  22:07:29,907 ProgressMeter -      1:52548989   5.24288E7     2.8 m       3.0 s        1.7%     2.8 h       2.7 h 
+INFO  22:07:59,919 ProgressMeter -      1:69156381   6.9025792E7     3.3 m       2.0 s        2.2%     2.5 h       2.4 h 
+INFO  22:08:29,936 ProgressMeter -      1:89726385   8.9604096E7     3.8 m       2.0 s        2.9%     2.2 h       2.1 h 
+INFO  22:08:59,945 ProgressMeter -     1:108918449   1.0887168E8     4.3 m       2.0 s        3.5%     2.1 h     119.1 m 
+INFO  22:09:39,946 ProgressMeter -     1:147161005   1.2599296E8     5.0 m       2.0 s        4.7%   105.4 m     100.4 m 
+INFO  22:10:09,946 ProgressMeter -     1:155732421   1.34578176E8     5.5 m       2.0 s        5.0%   109.5 m     104.0 m 
+INFO  22:10:40,569 ProgressMeter -     1:163807149   1.42688256E8     6.0 m       2.0 s        5.3%   113.9 m     107.9 m 
+INFO  22:11:10,596 ProgressMeter -     1:174970537   1.74866432E8     6.5 m       2.0 s        5.6%   115.5 m     109.0 m 
+INFO  22:11:40,768 ProgressMeter -     1:192288125   1.92167936E8     7.0 m       2.0 s        6.2%   113.2 m     106.2 m 
+INFO  22:12:10,774 ProgressMeter -     1:207242817   2.07126528E8     7.5 m       2.0 s        6.7%   112.5 m     105.0 m 
+INFO  22:12:40,783 ProgressMeter -     1:223938513   2.23821824E8     8.0 m       2.0 s        7.2%   111.0 m     103.0 m 
+INFO  22:13:11,081 ProgressMeter -     1:238993325   2.38944256E8     8.5 m       2.0 s        7.7%   110.5 m     102.0 m 
+INFO  22:13:41,419 ProgressMeter -       2:5235997   2.54280509E8     9.0 m       2.0 s        8.2%   110.1 m     101.1 m 
+INFO  22:14:21,420 ProgressMeter -      2:27319529   2.76448061E8     9.7 m       2.0 s        8.9%   108.8 m      99.1 m 
+INFO  22:14:51,421 ProgressMeter -      2:43040685   2.92143933E8    10.2 m       2.0 s        9.4%   108.2 m      98.0 m 
+INFO  22:15:21,424 ProgressMeter -      2:62293669   3.11427901E8    10.7 m       2.0 s       10.0%   106.5 m      95.8 m 
+INFO  22:15:51,441 ProgressMeter -      2:81051065   3.30171197E8    11.2 m       2.0 s       10.6%   105.2 m      94.0 m 
+INFO  22:16:21,442 ProgressMeter -      2:98596029   3.44752957E8    11.7 m       2.0 s       11.2%   104.3 m      92.6 m 
+INFO  22:17:01,442 ProgressMeter -     2:121199249   3.70295613E8    12.4 m       2.0 s       11.9%   103.5 m      91.2 m 
+INFO  22:17:31,443 ProgressMeter -     2:138762697   3.88006717E8    12.9 m       1.0 s       12.5%   102.9 m      90.0 m 
+INFO  22:18:11,444 ProgressMeter -     2:166152345   4.15286077E8    13.5 m       1.0 s       13.4%   101.1 m      87.5 m 
+INFO  22:18:41,452 ProgressMeter -     2:181725345   4.30949181E8    14.0 m       1.0 s       13.9%   101.0 m      87.0 m 
+INFO  22:19:11,457 ProgressMeter -     2:201852981   4.50986813E8    14.5 m       1.0 s       14.5%    99.9 m      85.4 m 
+INFO  22:19:41,458 ProgressMeter -     2:219563385   4.68730685E8    15.0 m       1.0 s       15.1%    99.5 m      84.4 m 
+INFO  22:20:21,504 ProgressMeter -     2:240591657   4.89718589E8    15.7 m       1.0 s       15.8%    99.4 m      83.7 m 
+INFO  22:20:51,505 ProgressMeter -      3:13955201   5.06245322E8    16.2 m       1.0 s       16.3%    99.2 m      83.0 m 
+INFO  22:21:31,506 ProgressMeter -      3:39625713   5.31951818E8    16.9 m       1.0 s       17.2%    98.3 m      81.5 m 
+INFO  22:22:01,515 ProgressMeter -      3:52232109   5.44551114E8    17.4 m       1.0 s       17.6%    98.9 m      81.5 m 
+INFO  22:22:31,523 ProgressMeter -      3:70337661   5.62737354E8    17.9 m       1.0 s       18.1%    98.5 m      80.6 m 
+INFO  22:23:01,527 ProgressMeter -      3:96881093   5.86215626E8    18.4 m       1.0 s       19.0%    96.7 m      78.3 m 
+INFO  22:23:31,587 ProgressMeter -     3:115188921   6.07514826E8    18.9 m       1.0 s       19.6%    96.3 m      77.4 m 
+INFO  22:24:11,588 ProgressMeter -     3:137592049   6.2997729E8    19.5 m       1.0 s       20.3%    96.2 m      76.6 m 
+INFO  22:24:41,594 ProgressMeter -     3:157229965   6.49605322E8    20.0 m       1.0 s       20.9%    95.6 m      75.6 m 
+INFO  22:25:11,595 ProgressMeter -     3:179472537   6.71805642E8    20.5 m       1.0 s       21.7%    94.8 m      74.3 m 
+INFO  22:25:41,600 ProgressMeter -     3:196544965   6.8887777E8    21.0 m       1.0 s       22.2%    94.7 m      73.7 m 
+INFO  22:26:11,610 ProgressMeter -      4:14424321   7.04775656E8    21.5 m       1.0 s       22.7%    94.8 m      73.2 m 
+INFO  22:26:41,631 ProgressMeter -      4:37264317   7.27614952E8    22.0 m       1.0 s       23.5%    93.9 m      71.9 m 
+INFO  22:27:11,635 ProgressMeter -      4:58278789   7.45637352E8    22.5 m       1.0 s       24.1%    93.3 m      70.8 m 
+INFO  22:27:51,636 ProgressMeter -      4:84451953   7.74768104E8    23.2 m       1.0 s       25.0%    92.9 m      69.7 m 
+INFO  22:28:21,646 ProgressMeter -     4:105021157   7.9539556E8    23.7 m       1.0 s       25.6%    92.4 m      68.7 m 
+INFO  22:29:01,647 ProgressMeter -     4:133447597   8.23789032E8    24.4 m       1.0 s       26.6%    91.7 m      67.4 m 
+INFO  22:29:31,651 ProgressMeter -     4:155003241   8.45350376E8    24.9 m       1.0 s       27.3%    91.2 m      66.4 m 
+INFO  22:30:01,655 ProgressMeter -     4:176923233   8.6732132E8    25.4 m       1.0 s       28.0%    90.7 m      65.3 m 
+INFO  22:30:31,659 ProgressMeter -       5:5175361   8.8670574E8    25.9 m       1.0 s       28.6%    90.5 m      64.6 m 
+INFO  22:31:01,760 ProgressMeter -      5:27295461   9.08791372E8    26.4 m       1.0 s       29.3%    90.0 m      63.6 m 
+INFO  22:31:31,764 ProgressMeter -      5:50205877   9.287307E8    26.9 m       1.0 s       30.0%    89.4 m      62.6 m 
+INFO  22:32:01,765 ProgressMeter -      5:69626917   9.51127628E8    27.4 m       1.0 s       30.7%    89.2 m      61.9 m 
+INFO  22:32:31,766 ProgressMeter -      5:88453033   9.69985612E8    27.9 m       1.0 s       31.3%    89.1 m      61.2 m 
+INFO  22:33:01,767 ProgressMeter -     5:110378925   9.9197294E8    28.4 m       1.0 s       32.0%    88.7 m      60.3 m 
+INFO  22:33:31,768 ProgressMeter -     5:131713877   1.013222988E9    28.9 m       1.0 s       32.7%    88.4 m      59.5 m 
+INFO  22:34:11,769 ProgressMeter -     5:150765485   1.032261196E9    29.5 m       1.0 s       33.3%    88.7 m      59.2 m 
+INFO  22:34:41,795 ProgressMeter -     5:170712297   1.05226606E9    30.0 m       1.0 s       33.9%    88.5 m      58.5 m 
+INFO  22:35:11,796 ProgressMeter -       6:5526109   1.068063368E9    30.5 m       1.0 s       34.4%    88.7 m      58.1 m 
+INFO  22:35:51,797 ProgressMeter -      6:30228881   1.092704904E9    31.2 m       1.0 s       35.2%    88.6 m      57.4 m 
+INFO  22:36:21,936 ProgressMeter -      6:42522781   1.104943752E9    31.7 m       1.0 s       35.6%    89.0 m      57.3 m 
+INFO  22:36:52,067 ProgressMeter -      6:63788613   1.123129992E9    32.2 m       1.0 s       36.3%    88.7 m      56.5 m 
+INFO  22:37:22,087 ProgressMeter -      6:84199177   1.146624648E9    32.7 m       1.0 s       37.0%    88.4 m      55.7 m 
+INFO  22:37:52,089 ProgressMeter -     6:106425981   1.168824968E9    33.2 m       1.0 s       37.7%    88.1 m      54.9 m 
+INFO  22:38:32,090 ProgressMeter -     6:133749293   1.196284552E9    33.9 m       1.0 s       38.6%    87.8 m      53.9 m 
+INFO  22:39:02,142 ProgressMeter -     6:152783801   1.215208072E9    34.4 m       1.0 s       39.2%    87.7 m      53.3 m 
+INFO  22:39:32,200 ProgressMeter -        7:741181   1.234377923E9    34.9 m       1.0 s       39.8%    87.6 m      52.7 m 
+INFO  22:40:02,227 ProgressMeter -      7:18595757   1.252220099E9    35.4 m       1.0 s       40.4%    87.6 m      52.2 m 
+INFO  22:40:32,228 ProgressMeter -      7:38158253   1.271651523E9    35.9 m       1.0 s       41.0%    87.5 m      51.6 m 
+INFO  22:41:02,232 ProgressMeter -      7:57641213   1.291230403E9    36.4 m       1.0 s       41.6%    87.4 m      51.0 m 
+INFO  22:41:42,237 ProgressMeter -      7:82821037   1.316379843E9    37.0 m       1.0 s       42.4%    87.3 m      50.2 m 
+INFO  22:42:12,295 ProgressMeter -     7:100564909   1.334090947E9    37.5 m       1.0 s       43.0%    87.3 m      49.7 m 
+INFO  22:42:42,305 ProgressMeter -     7:119386825   1.352998083E9    38.0 m       1.0 s       43.6%    87.2 m      49.2 m 
+INFO  22:43:12,409 ProgressMeter -     7:138657709   1.372282051E9    38.6 m       1.0 s       44.2%    87.1 m      48.6 m 
+INFO  22:43:52,410 ProgressMeter -       8:2048701   1.394745386E9    39.2 m       1.0 s       45.0%    87.2 m      48.0 m 
+INFO  22:44:22,412 ProgressMeter -      8:21652665   1.414324266E9    39.7 m       1.0 s       45.6%    87.1 m      47.4 m 
+INFO  22:44:52,413 ProgressMeter -      8:39963177   1.432641578E9    40.2 m       1.0 s       46.2%    87.1 m      46.8 m 
+INFO  22:45:32,424 ProgressMeter -      8:69465177   1.462247466E9    40.9 m       1.0 s       47.1%    86.7 m      45.8 m 
+INFO  22:46:02,428 ProgressMeter -      8:91695165   1.484365866E9    41.4 m       1.0 s       47.9%    86.5 m      45.1 m 
+INFO  22:46:32,461 ProgressMeter -     8:112901561   1.50551761E9    41.9 m       1.0 s       48.5%    86.3 m      44.4 m 
+INFO  22:47:02,537 ProgressMeter -     8:134276781   1.526947882E9    42.4 m       1.0 s       49.2%    86.1 m      43.7 m 
+INFO  22:47:32,602 ProgressMeter -       9:5713833   1.544746656E9    42.9 m       1.0 s       49.8%    86.1 m      43.2 m 
+INFO  22:48:02,619 ProgressMeter -      9:26796041   1.565832864E9    43.4 m       1.0 s       50.5%    85.9 m      42.5 m 
+INFO  22:48:32,750 ProgressMeter -      9:44143697   1.583150752E9    43.9 m       1.0 s       51.0%    86.0 m      42.1 m 
+INFO  22:49:12,751 ProgressMeter -      9:86638509   1.608447648E9    44.6 m       1.0 s       52.4%    85.0 m      40.4 m 
+INFO  22:49:43,077 ProgressMeter -     9:100532141   1.62234128E9    45.1 m       1.0 s       52.9%    85.2 m      40.2 m 
+INFO  22:50:23,077 ProgressMeter -     9:122093085   1.661122208E9    45.7 m       1.0 s       53.6%    85.4 m      39.6 m 
+INFO  22:50:53,078 ProgressMeter -     9:135277005   1.674393248E9    46.2 m       1.0 s       54.0%    85.6 m      39.4 m 
+INFO  22:51:23,456 ProgressMeter -      10:7469221   1.687729559E9    46.7 m       1.0 s       54.4%    85.9 m      39.2 m 
+INFO  22:51:53,635 ProgressMeter -     10:25909805   1.706194327E9    47.2 m       1.0 s       55.0%    85.9 m      38.6 m 
+INFO  22:52:23,712 ProgressMeter -     10:46317485   1.723397527E9    47.7 m       1.0 s       55.7%    85.7 m      38.0 m 
+INFO  22:52:53,897 ProgressMeter -     10:61941021   1.742189975E9    48.2 m       1.0 s       56.2%    85.9 m      37.6 m 
+INFO  22:53:24,179 ProgressMeter -     10:79396781   1.759622551E9    48.7 m       1.0 s       56.7%    85.9 m      37.2 m 
+INFO  22:53:54,180 ProgressMeter -     10:97063817   1.777382807E9    49.2 m       1.0 s       57.3%    85.9 m      36.7 m 
+INFO  22:54:24,274 ProgressMeter -    10:113738829   1.793979799E9    49.7 m       1.0 s       57.8%    86.0 m      36.2 m 
+INFO  22:54:54,595 ProgressMeter -    10:131304977   1.811559831E9    50.3 m       1.0 s       58.4%    86.0 m      35.8 m 
+INFO  22:55:24,635 ProgressMeter -      11:8552365   1.82426373E9    50.8 m       1.0 s       58.8%    86.3 m      35.5 m 
+INFO  22:56:04,636 ProgressMeter -     11:33357741   1.849134642E9    51.4 m       1.0 s       59.6%    86.2 m      34.8 m 
+INFO  22:56:34,636 ProgressMeter -     11:54984621   1.867664946E9    51.9 m       1.0 s       60.3%    86.1 m      34.2 m 
+INFO  22:57:04,637 ProgressMeter -     11:65685257   1.881476658E9    52.4 m       1.0 s       60.7%    86.4 m      34.0 m 
+INFO  22:57:34,638 ProgressMeter -     11:80235249   1.89602565E9    52.9 m       1.0 s       61.1%    86.6 m      33.6 m 
+INFO  22:58:04,693 ProgressMeter -    11:100958125   1.916767794E9    53.4 m       1.0 s       61.8%    86.4 m      33.0 m 
+INFO  22:58:34,720 ProgressMeter -    11:118542841   1.934331442E9    53.9 m       1.0 s       62.4%    86.5 m      32.5 m 
+INFO  22:59:04,724 ProgressMeter -       12:147373   1.951045478E9    54.4 m       1.0 s       62.9%    86.5 m      32.1 m 
+INFO  22:59:34,728 ProgressMeter -     12:13926317   1.964709734E9    54.9 m       1.0 s       63.3%    86.7 m      31.8 m 
+INFO  23:00:04,806 ProgressMeter -     12:33554349   1.984337766E9    55.4 m       1.0 s       64.0%    86.6 m      31.2 m 
+INFO  23:00:44,806 ProgressMeter -     12:56102017   2.006898534E9    56.1 m       1.0 s       64.7%    86.7 m      30.6 m 
+INFO  23:01:14,807 ProgressMeter -     12:72425381   2.023216998E9    56.6 m       1.0 s       65.2%    86.7 m      30.2 m 
+INFO  23:01:54,809 ProgressMeter -    12:101378109   2.052233062E9    57.3 m       1.0 s       66.2%    86.5 m      29.3 m 
+INFO  23:02:24,817 ProgressMeter -    12:117447113   2.068289382E9    57.8 m       1.0 s       66.7%    86.6 m      28.9 m 
+INFO  23:02:54,818 ProgressMeter -    12:133294041   2.084083558E9    58.3 m       1.0 s       67.2%    86.7 m      28.4 m 
+INFO  23:03:24,819 ProgressMeter -     13:33680921   2.099315293E9    58.8 m       1.0 s       68.3%    86.0 m      27.3 m 
+INFO  23:04:04,938 ProgressMeter -     13:53449809   2.119107165E9    59.4 m       1.0 s       68.9%    86.2 m      26.8 m 
+INFO  23:04:34,942 ProgressMeter -     13:72258841   2.156905053E9    59.9 m       1.0 s       69.5%    86.2 m      26.2 m 
+INFO  23:05:14,942 ProgressMeter -    13:101529565   2.186117725E9    60.6 m       1.0 s       70.5%    86.0 m      25.4 m 
+INFO  23:05:44,943 ProgressMeter -     14:21698417   2.202524851E9    61.1 m       1.0 s       71.6%    85.3 m      24.2 m 
+INFO  23:06:15,103 ProgressMeter -     14:36934337   2.217761971E9    61.6 m       1.0 s       72.1%    85.4 m      23.8 m 
+INFO  23:06:55,103 ProgressMeter -     14:58720173   2.239552691E9    62.3 m       1.0 s       72.8%    85.5 m      23.2 m 
+INFO  23:07:25,108 ProgressMeter -     14:73531309   2.273336499E9    62.8 m       1.0 s       73.3%    85.6 m      22.9 m 
+INFO  23:07:55,112 ProgressMeter -     14:90843897   2.290654387E9    63.3 m       1.0 s       73.9%    85.6 m      22.4 m 
+INFO  23:08:35,113 ProgressMeter -     15:22200237   2.308924119E9    63.9 m       1.0 s       75.1%    85.1 m      21.2 m 
+INFO  23:09:05,449 ProgressMeter -     15:35142197   2.322309847E9    64.4 m       1.0 s       75.5%    85.3 m      20.9 m 
+INFO  23:09:36,432 ProgressMeter -     15:46848157   2.334024407E9    65.0 m       1.0 s       75.9%    85.6 m      20.6 m 
+INFO  23:10:16,435 ProgressMeter -     15:65853297   2.373067479E9    65.6 m       1.0 s       76.5%    85.8 m      20.1 m 
+INFO  23:10:56,436 ProgressMeter -     15:86351481   2.393514711E9    66.3 m       1.0 s       77.2%    85.9 m      19.6 m 
+INFO  23:11:26,436 ProgressMeter -      16:1248085   2.411013143E9    66.8 m       1.0 s       77.7%    85.9 m      19.1 m 
+INFO  23:12:06,437 ProgressMeter -     16:19934645   2.429641751E9    67.5 m       1.0 s       78.3%    86.1 m      18.7 m 
+INFO  23:12:36,441 ProgressMeter -     16:32888789   2.442585111E9    68.0 m       1.0 s       78.8%    86.3 m      18.3 m 
+INFO  23:13:16,654 ProgressMeter -     16:65916133   2.464523287E9    68.6 m       1.0 s       79.8%    86.0 m      17.4 m 
+INFO  23:13:46,662 ProgressMeter -     16:77627109   2.487428119E9    69.1 m       1.0 s       80.2%    86.2 m      17.1 m 
+INFO  23:14:26,663 ProgressMeter -      17:6057097   2.506102872E9    69.8 m       1.0 s       80.8%    86.4 m      16.6 m 
+INFO  23:14:56,673 ProgressMeter -     17:18525821   2.518636632E9    70.3 m       1.0 s       81.2%    86.6 m      16.3 m 
+INFO  23:15:36,674 ProgressMeter -     17:37576013   2.537609304E9    71.0 m       1.0 s       81.8%    86.7 m      15.8 m 
+INFO  23:16:06,733 ProgressMeter -     17:48136109   2.548291672E9    71.5 m       1.0 s       82.2%    87.0 m      15.5 m 
+INFO  23:16:36,742 ProgressMeter -     17:63422381   2.56356156E9    72.0 m       1.0 s       82.6%    87.1 m      15.1 m 
+INFO  23:17:06,848 ProgressMeter -     17:78397357   2.578438232E9    72.5 m       1.0 s       83.1%    87.2 m      14.7 m 
+INFO  23:17:46,912 ProgressMeter -     18:21777237   2.59994653E9    73.1 m       1.0 s       83.9%    87.1 m      14.0 m 
+INFO  23:18:16,912 ProgressMeter -     18:42827693   2.624178466E9    73.6 m       1.0 s       84.6%    87.0 m      13.4 m 
+INFO  23:18:46,913 ProgressMeter -     18:61598157   2.64279069E9    74.1 m       1.0 s       85.2%    87.0 m      12.9 m 
+INFO  23:19:17,118 ProgressMeter -      19:3016657   2.66234429E9    74.6 m       1.0 s       85.8%    86.9 m      12.3 m 
+INFO  23:19:47,119 ProgressMeter -     19:13320109   2.67266621E9    75.1 m       1.0 s       86.2%    87.2 m      12.1 m 
+INFO  23:20:17,179 ProgressMeter -     19:30910825   2.687149666E9    75.6 m       1.0 s       86.7%    87.2 m      11.6 m 
+INFO  23:20:47,199 ProgressMeter -     19:42583917   2.70191165E9    76.1 m       1.0 s       87.1%    87.4 m      11.3 m 
+INFO  23:21:17,343 ProgressMeter -     19:53346305   2.712675938E9    76.6 m       1.0 s       87.5%    87.6 m      11.0 m 
+INFO  23:21:47,344 ProgressMeter -      20:5980077   2.724537081E9    77.1 m       1.0 s       87.8%    87.8 m      10.7 m 
+INFO  23:22:17,417 ProgressMeter -     20:26202917   2.744656633E9    77.6 m       1.0 s       88.5%    87.7 m      10.1 m 
+INFO  23:22:47,418 ProgressMeter -     20:43646893   2.762089209E9    78.1 m       1.0 s       89.1%    87.7 m       9.6 m 
+INFO  23:23:17,420 ProgressMeter -     20:60575749   2.779144953E9    78.6 m       1.0 s       89.6%    87.8 m       9.1 m 
+INFO  23:23:47,522 ProgressMeter -     21:27081669   2.799162473E9    79.1 m       1.0 s       90.5%    87.4 m       8.3 m 
+INFO  23:24:17,690 ProgressMeter -     21:42637469   2.824164457E9    79.6 m       1.0 s       91.1%    87.5 m       7.8 m 
+INFO  23:24:47,691 ProgressMeter -     22:21872557   2.835430352E9    80.1 m       1.0 s       91.9%    87.2 m       7.0 m 
+INFO  23:25:17,796 ProgressMeter -     22:32756117   2.846325712E9    80.6 m       1.0 s       92.3%    87.4 m       6.7 m 
+INFO  23:25:47,859 ProgressMeter -     22:44080261   2.873686992E9    81.1 m       1.0 s       92.6%    87.6 m       6.4 m 
+INFO  23:26:17,863 ProgressMeter -      X:10239917   2.891256902E9    81.6 m       1.0 s       93.2%    87.6 m       5.9 m 
+INFO  23:26:58,002 ProgressMeter -      X:40138517   2.921157702E9    82.3 m       1.0 s       94.2%    87.4 m       5.1 m 
+INFO  23:27:38,004 ProgressMeter -      X:68122689   2.945946694E9    83.0 m       1.0 s       95.1%    87.3 m       4.3 m 
+INFO  23:28:08,018 ProgressMeter -      X:88955637   2.969949254E9    83.5 m       1.0 s       95.8%    87.2 m       3.7 m 
+INFO  23:28:38,023 ProgressMeter -     X:110237553   2.991264838E9    84.0 m       1.0 s       96.4%    87.1 m       3.1 m 
+INFO  23:29:08,099 ProgressMeter -     X:132735685   3.01367815E9    84.5 m       1.0 s       97.2%    86.9 m       2.5 m 
+INFO  23:29:38,100 ProgressMeter -     X:153281521   3.034190918E9    85.0 m       1.0 s       97.8%    86.9 m     113.0 s 
+INFO  23:30:08,106 ProgressMeter -      Y:23026121   3.059323366E9    85.5 m       1.0 s       98.6%    86.7 m      71.0 s 
+INFO  23:30:32,675 GATKRunReport - Uploaded run statistics report to AWS S3 
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 3.5-0-g36282e4): 
+##### ERROR
+##### ERROR This means that one or more arguments or inputs in your command are incorrect.
+##### ERROR The error message below tells you what is the problem.
+##### ERROR
+##### ERROR If the problem is an invalid argument, please check the online documentation guide
+##### ERROR (or rerun your command with --help) to view allowable command-line arguments for this tool.
+##### ERROR
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions http://www.broadinstitute.org/gatk
+##### ERROR
+##### ERROR Please do NOT post this error to the GATK forum unless you have really tried to fix it yourself.
+##### ERROR
+##### ERROR MESSAGE: Badly formed genome location: Contig NC_007605 given as location, but this contig isn't present in the Fasta sequence dictionary
+##### ERROR ------------------------------------------------------------------------------------------
+5060.54user 85.66system 1:26:01elapsed 99%CPU (0avgtext+0avgdata 20803936maxresident)k
+6259696inputs+65488outputs (8major+459279minor)pagefaults 0swaps
+-----------------------------------------------------
+VCF Gen done
+-----------------------------------------------------
+-----------------------------------------------------
+Spring Cleaning
+-----------------------------------------------------
+-----------------------------------------------------
+done
+-----------------------------------------------------
